@@ -17,14 +17,14 @@ async function get_data(ipAddress) {
     var res1 = await res.json();   
     console.log(res1)  
     var output=document.getElementById("result");
-    output.innerHTML=`CONTINENT: <span>${res1.continent}</span><br>
-    COUNTRY: <span>${res1.country}</span><br>
-    STATE: <span>${res1.regionName}</span><br>
-    CITY: <span>${res1.city}</span><br>
-    PIN CODE: <span>${res1.zip}</span><br>
-    ISP: <span>${res1.isp}</span><br>
-    LATITUDE: <span>${res1.lat}</span><br>
-    LONGITUDE: <span>${res1.lon}</span>`    
+    output.innerHTML=`CONTINENT: <span class="main1">${res1.continent}</span><br>
+    COUNTRY: <span class="main1">${res1.country}</span><br>
+    STATE: <span class="main1">${res1.regionName}</span><br>
+    CITY: <span class="main1">${res1.city}</span><br>
+    PIN CODE: <span class="main1">${res1.zip}</span><br>
+    ISP: <span class="main1">${res1.isp}</span><br>
+    LATITUDE: <span class="main1">${res1.lat}</span><br>
+    LONGITUDE: <span class="main1">${res1.lon}</span>`    
     } catch (error) {
         console.error('Error fetching data:', error);
     }

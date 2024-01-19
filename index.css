@@ -5,12 +5,12 @@
 h1{
     font-weight: bolder;
  }
- p{
+ .main{
     text-align: center;
     font-size: 25px;
     font-weight: 700;
     color:blue;
  }
- span{
+ .main1{
     color:maroon;
  }
